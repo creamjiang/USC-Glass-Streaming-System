@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Mechanic" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Mechanic" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="http://192.168.0.9:8090/live.mpg temp.mpg" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+				<Linker>
+					<Add library="/usr/local/lib/libopencv_contrib.so" />
+					<Add library="/usr/local/lib/libopencv_core.so" />
+					<Add library="/usr/local/lib/libopencv_features2d.so" />
+					<Add library="/usr/local/lib/libopencv_flann.so" />
+					<Add library="/usr/local/lib/libopencv_gpu.so" />
+					<Add library="/usr/local/lib/libopencv_highgui.so" />
+					<Add library="/usr/local/lib/libopencv_imgproc.so" />
+					<Add library="/usr/local/lib/libopencv_legacy.so" />
+					<Add library="/usr/local/lib/libopencv_ml.so" />
+					<Add library="/usr/local/lib/libopencv_nonfree.so" />
+					<Add library="/usr/local/lib/libopencv_objdetect.so" />
+					<Add library="/usr/local/lib/libopencv_ocl.so" />
+					<Add library="/usr/local/lib/libopencv_photo.so" />
+					<Add library="/usr/local/lib/libopencv_stitching.so" />
+					<Add library="/usr/local/lib/libopencv_superres.so" />
+					<Add library="/usr/local/lib/libopencv_ts.a" />
+					<Add library="/usr/local/lib/libopencv_video.so" />
+					<Add library="/usr/local/lib/libopencv_videostab.so" />
+					<Add library="/usr/local/lib/libopencv_calib3d.so" />
+					<Add library="/usr/local/lib/liblept.so" />
+					<Add library="/usr/local/lib/libtesseract.so" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Mechanic" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="http://127.0.0.1:8090/live.mpg" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-std=c++11" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="/usr/local/lib/libopencv_contrib.so" />
+					<Add library="/usr/local/lib/libopencv_core.so" />
+					<Add library="/usr/local/lib/libopencv_features2d.so" />
+					<Add library="/usr/local/lib/libopencv_flann.so" />
+					<Add library="/usr/local/lib/libopencv_gpu.so" />
+					<Add library="/usr/local/lib/libopencv_highgui.so" />
+					<Add library="/usr/local/lib/libopencv_imgproc.so" />
+					<Add library="/usr/local/lib/libopencv_legacy.so" />
+					<Add library="/usr/local/lib/libopencv_ml.so" />
+					<Add library="/usr/local/lib/libopencv_nonfree.so" />
+					<Add library="/usr/local/lib/libopencv_objdetect.so" />
+					<Add library="/usr/local/lib/libopencv_ocl.so" />
+					<Add library="/usr/local/lib/libopencv_photo.so" />
+					<Add library="/usr/local/lib/libopencv_stitching.so" />
+					<Add library="/usr/local/lib/libopencv_superres.so" />
+					<Add library="/usr/local/lib/libopencv_ts.a" />
+					<Add library="/usr/local/lib/libopencv_video.so" />
+					<Add library="/usr/local/lib/libopencv_videostab.so" />
+					<Add library="/usr/local/lib/libopencv_calib3d.so" />
+					<Add library="/usr/local/lib/liblept.so" />
+					<Add library="/usr/local/lib/libtesseract.so" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Linker>
+			<Add option="`pkg-config --cflags opencv --libs opencv`" />
+		</Linker>
+		<Unit filename="main.cpp" />
+		<Unit filename="stdafx.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

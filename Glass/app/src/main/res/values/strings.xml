@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Telescope</string>
+    <string name="title_activity_main">Telescope</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="start_streaming">Start Streaming</string>
+    <string name="stop_streaming">Stop Streaming</string>
+</resources>
